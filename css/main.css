@@ -1,0 +1,284 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+.hero{
+  height: auto;
+  width: 100%;
+
+}
+.sectionInicio{
+  height: auto;
+  width: 100%;
+  background: linear-gradient(to bottom right, #2962FF 50%, #BBDEFB 50%);
+}
+
+.sectionDatos{
+  padding-top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.acciones{
+  background-color: rgb(255,51,102);
+  font-size: 14px;
+  padding: 7px 7px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 999em;
+  border: none;
+  margin: 5px 5px;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+  z-index: 999;
+  display: flex;
+
+}
+
+nav.scrolled {
+  background-color: white;
+}
+
+nav.scrolled h2.logo {
+  color: rgb(255,51,102);
+}
+
+nav.scrolled ul li a {
+  color: black;
+}
+
+nav.scrolled .btnInicio{
+  color: black;
+}
+
+.logo{
+  color: rgb(255,51,102);
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover{
+  color: #fff;
+  transition: .4s;
+}
+
+.btnInicio{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 25px;
+}
+
+.btnRegistro{
+  background-color: rgb(255,51,102);
+  color: #fff;
+  border-radius: 999em;
+  font-weight: bold;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+.btnRegistro:hover{
+  transform: scale(1.2);
+}
+
+.content{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 200px 40px 40px 40px;
+}
+
+h4,h1 {
+  color: #fff;
+  padding: 12px 10px;
+}
+
+
+.download{
+  background-color: rgb(255,51,102);
+  color: white;
+  border-radius: 999em;
+  font-weight: bold;
+  padding: 12px 27px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th{
+  background-color: #f8f9fa;
+  font-weight: bold;
+  text-align: left;
+}
+  
+table, th, td {
+  padding: 8px;
+  border: 1px solid #dee2e6;
+}
+  
+.imgUno{
+  width: 30%;
+  transform: translate(115%,25%);
+}
+
+.imgDos{
+  width: 15%;
+  transform: translate(155%,5%);
+  opacity: .9;
+}
+
+.imgTres{
+  width: 20%;
+  transform: translate(186%,-24%);
+}
+
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.video-container {
+  width: 70%;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+
+#edit-button {
+  margin: 20px;
+}
+
+#edit-form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+#edit-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255,51,102);
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+}
+
+#edit-form h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+#edit-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: 400;
+}
+
+#edit-form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+#edit-form button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  color: rgb(255,51,102);
+  border: none;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+.redes-sociales a {
+  color: rgb(255,51,102);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.informacion-contacto p {
+  margin: 5px;
+}
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+#btn-popup {
+  margin: 20px;
+}
